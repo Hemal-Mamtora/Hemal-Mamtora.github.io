@@ -5,6 +5,8 @@ import svgRect from '@src/static/home_rect.svg';
 import { HeroCard } from './HeroCard';
 import { HomeWrapper, Intro } from './Home.style';
 
+import {name, tagline} from '../../data/me'
+
 import IconLink from '@common/IconLink';
 import PageHeader from '@common/PageHeader';
 import Flex from '@common/Flex';
@@ -58,8 +60,8 @@ const Home = () => {
         {/* <Parallax y={[50, -50]} className="home__text"> */}
         <div className="home__text">
           <p>Hello, I’m</p>
-          <h1>ANURAG HAZRA</h1>
-          <p className="adjust">CREATIVE FRONT-END WEB DEVELOPER</p>
+          <h1>{name}</h1>
+          <p className="adjust">{tagline}</p>
 
           <div className="home__CTA">
             <Button className="cta" as="a" href="#">
